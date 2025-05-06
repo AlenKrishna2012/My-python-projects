@@ -6,12 +6,12 @@ data = input('enter date to change to qr code:')
 
 #Path where you want to save the QR code image (Android/iOS Storage)
 #You can specify a path like '/sdcard/' on Android or use other paths supported by mobile OS.
-file_path = "/storage/emulated/0/python/example qrcode.png"# Android example path
+file_path = "/path/for/the/file/to/save/qrcode.png"# Android example path
 #For iOS, use a valid path like '/var/mobile/Containers/Data/Application/...' 
 
 #Create a QR code instance
 qr = qrcode.QRCode(
-    version=3,  # Size of the QR code
+    version=3,  # Size of the QR code 0-40
     error_correction=qrcode.constants.ERROR_CORRECT_L,  # Error correction level
     box_size=30,  # Box size of the QR code
     border=4,  # Border thickness
