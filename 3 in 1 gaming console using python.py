@@ -111,7 +111,7 @@ def main_menu():
     }
 
     while True:
-        print("\n--- 5-in-1 Gaming Console ---")
+        print("\n---3-in-1 Gaming Console ---")
         print("1. Guess the Number")
         print("2. Rock, Paper, Scissors")
         print("3. Text Adventure")
